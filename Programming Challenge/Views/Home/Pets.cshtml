@@ -1,0 +1,35 @@
+﻿@model Programming_Challenge.Models.CatModel
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h1 style="color:mediumblue; text-align: center; font: bold; font-family: Algerian">Cats</h1>
+        <hr/>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="catList">
+            <h3 style="color:red; font-family: Calibri">Male</h3>
+            @foreach (var item in Model.maleCatList)
+            {
+                <ul>
+                    <li style="font-family:Arial; color:black">@item</li>
+                </ul>
+            }
+            <h3 style="color:red; font-family: Calibri">Female</h3>
+            @foreach (var item in Model.femaleCatList)
+            {
+                <ul>
+                    <li style="font-family:Arial; color:black">@item</li>
+                </ul>
+            }
+        </div>
+    </div>
+}
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
