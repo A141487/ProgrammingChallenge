@@ -10,7 +10,7 @@ namespace Programming_Challenge.Models
     /// </summary>
     public class CatModel
     {
-        public List<string> maleCatList { get; set; }
-        public List<string> femaleCatList { get; set; }
+        public List<string> MaleCatList { get; set; }
+        public List<string> FemaleCatList { get; set; }
     }
 }

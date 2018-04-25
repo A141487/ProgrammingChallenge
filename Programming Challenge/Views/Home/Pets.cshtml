@@ -1,27 +1,27 @@
 ﻿@model Programming_Challenge.Models.CatModel
-
+<link rel="stylesheet" type="text/css" href="~/SharedStyle.css">
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <h1 style="color:mediumblue; text-align: center; font: bold; font-family: Algerian">Cats</h1>
+        <h1>Cats</h1>
         <hr/>
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="catList">
-            <h3 style="color:red; font-family: Calibri">Male</h3>
-            @foreach (var item in Model.maleCatList)
+            <h3>Male</h3>
+            @foreach (var item in Model.MaleCatList)
             {
                 <ul>
-                    <li style="font-family:Arial; color:black">@item</li>
+                    <li>@item</li>
                 </ul>
             }
-            <h3 style="color:red; font-family: Calibri">Female</h3>
-            @foreach (var item in Model.femaleCatList)
+            <h3>Female</h3>
+            @foreach (var item in Model.FemaleCatList)
             {
                 <ul>
-                    <li style="font-family:Arial; color:black">@item</li>
+                    <li>@item</li>
                 </ul>
             }
         </div>

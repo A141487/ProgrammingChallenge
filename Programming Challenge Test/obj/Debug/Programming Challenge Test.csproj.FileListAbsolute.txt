@@ -1,0 +1,40 @@
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\roslyn\csc.exe
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\roslyn\vbc.exe
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\Microsoft.ApplicationInsights.Extensions.Intercept_x86.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\Microsoft.ApplicationInsights.Extensions.Intercept_x64.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\Programming Challenge Test.dll.config
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\Programming Challenge Test.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\Programming Challenge Test.pdb
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\Programming Challenge.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\System.Web.Helpers.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\System.Web.Mvc.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\System.Web.Razor.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\System.Web.WebPages.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\System.Web.Optimization.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\Newtonsoft.Json.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\Programming Challenge.pdb
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\System.Web.Helpers.xml
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\System.Web.Mvc.xml
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\System.Web.Razor.xml
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\System.Web.WebPages.xml
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\System.Web.Optimization.xml
+C:\Codes\programmingchallenge\Programming Challenge Test\bin\Debug\Newtonsoft.Json.xml
+C:\Codes\programmingchallenge\Programming Challenge Test\obj\Debug\Programming Challenge Test.csprojResolveAssemblyReference.cache
+C:\Codes\programmingchallenge\Programming Challenge Test\obj\Debug\Programming Challenge Test.dll
+C:\Codes\programmingchallenge\Programming Challenge Test\obj\Debug\Programming Challenge Test.pdb
