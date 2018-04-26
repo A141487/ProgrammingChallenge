@@ -11,13 +11,13 @@ namespace Programming_Challenge.Controllers.Tests
     public class HomeControllerTest
     {
         /// <summary>
-        /// Method to test GetCatList Action method of Home Controller
+        /// Method to test DisplayCatList Action method of Home Controller
         /// </summary>
         [TestMethod()]
-        public void GetCatList_Test()
+        public void DisplayCatList_Test()
         {
             HomeController homeCtlr = new HomeController();
-            var response = homeCtlr.GetCatList();
+            var response = homeCtlr.DisplayCatList();
             Assert.IsNotNull(response);
             Assert.AreEqual(typeof(ViewResult), response.GetType());
             Assert.IsTrue(((ViewResultBase)response).ViewEngineCollection.Count > 0);

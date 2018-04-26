@@ -13,22 +13,42 @@ namespace Programming_Challenge.Controllers
     public class HomeController : Controller
     {
         /// <summary>
-        /// Method to get the cat list and load the view on application load
+        /// Method load the view on application load
         /// </summary>
         /// <returns>Pets view</returns>
-        public ActionResult GetCatList()
+        public ActionResult DisplayCatList()
         {
             try
             {
                 CatModel catModel = new CatModel();
-                catModel.FemaleCatList = new List<string>();
-                catModel.MaleCatList = new List<string>();
-                WebClient wc = new WebClient();
-                var jsonData = wc.DownloadString("http://agl-developer-test.azurewebsites.net/people.json");
-                var response = JsonConvert.DeserializeObject<List<PetOwners>>(jsonData);
-                if(response != null && response.Count > 0)
+                List<PetOwners> response = new List<PetOwners>();
+                response = GetJsonData();
+                catModel = GetCatList(response);
+                return View("Pets", catModel);
+            }
+            catch (Exception e)
+            {
+                ModelState.AddModelError("", "Error detail: " + e.Message);
+                return View("Error");
+            }
+        }
+
+        /// <summary>
+        /// Private method to get cat list based on owner gender
+        /// </summary>
+        /// <param name="list">List of PetOwners</param>
+        /// <returns>CatModel</returns>
+        private CatModel GetCatList(List<PetOwners> list)
+        {
+            CatModel catModel = new CatModel();
+            catModel.FemaleCatList = new List<string>();
+            catModel.MaleCatList = new List<string>();
+
+            try
+            {
+                if (list != null && list.Count > 0)
                 {
-                    foreach (PetOwners item in response)
+                    foreach (PetOwners item in list)
                     {
                         if (item.Pets != null && item.Pets.Count > 0 && item.Gender != string.Empty)
                         {
@@ -50,14 +70,32 @@ namespace Programming_Challenge.Controllers
                 {
                     ModelState.AddModelError("", "Error detail: No data to list");
                 }
-                
-                return View("Pets", catModel);
             }
             catch (Exception e)
             {
                 ModelState.AddModelError("", "Error detail: " + e.Message);
-                return View("Error");
             }
+            return catModel;
+        }
+
+        /// <summary>
+        /// Method to get List of Pet Owners from the Json data
+        /// </summary>
+        /// <returns>List of PetOwners</returns>
+        private List<PetOwners> GetJsonData()
+        {
+            List<PetOwners> response = new List<PetOwners>();
+            try
+            {
+                WebClient wc = new WebClient();
+                var jsonData = wc.DownloadString("http://agl-developer-test.azurewebsites.net/people.json");
+                response = JsonConvert.DeserializeObject<List<PetOwners>>(jsonData);
+            }
+            catch (Exception e)
+            {
+                ModelState.AddModelError("", "Error detail: " + e.Message);
+            }
+            return response;
         }
     }
 }
